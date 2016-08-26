@@ -23,8 +23,7 @@
               showSkipButton:YES
               isFullScreenAD:NO
               localAdImgName:nil
-                    imageURL:@"http://img4q.duitang.com/uploads/item/201204/01/"
-                             @"20120401222504_xMBAS.thumb.224_0.jpeg"
+                    imageURL:@"http://pic.yesky.com/uploadImages/2016/064/55/UWVJ44A8HXTX.jpg"
                   canClickAD:YES
                      aDBlock:^(BOOL clickAD) {
 

@@ -74,7 +74,6 @@
   } else {
     [adImageView sd_setImageWithURL:[NSURL URLWithString:imageURL]];
   }
-  adImageView.backgroundColor = [UIColor redColor];
   CGFloat imageViewHeight;
   if (isFullScreenAD) {
     imageViewHeight = viewSize.height;

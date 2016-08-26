@@ -2,7 +2,6 @@
 一行代码实现启动广告页
 #实用方法
 
-
 -(BOOL)application:(UIApplication *)application
     didFinishLaunchingWithOptions:(NSDictionary *)launchOptions 
  {
@@ -31,3 +30,4 @@
                      }];
                     return YES;
 }
+![image](https://github.com/lsmakethebest/LSLaunchAD/blob/master/images/ad.gif)
