@@ -28,6 +28,7 @@
                          NSLog(@"完成倒计时或点击了跳转按钮");
                        }
                      }];
-                    return YES;
+                    return YES;          
 }
+
 ![image](https://github.com/lsmakethebest/LSLaunchAD/blob/master/images/ad.gif)
