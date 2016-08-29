@@ -31,7 +31,15 @@
 
 @implementation LSLaunchAD
 
-+ (instancetype)showWithWindow:(UIWindow *)window countTime:(int)countTime showCountTimeOfButton:(BOOL)showCountTimeOfButton showSkipButton:(BOOL)showSkipButton isFullScreenAD:(BOOL)isFullScreenAD localAdImgName:(NSString *)localAdImgName imageURL:(NSString *)imageURL canClickAD:(BOOL)canClickAD aDBlock:(LSLaunchADBlock)aDBlock
++ (instancetype)showWithWindow:(UIWindow *)window
+                     countTime:(int)countTime
+         showCountTimeOfButton:(BOOL)showCountTimeOfButton
+                showSkipButton:(BOOL)showSkipButton
+                isFullScreenAD:(BOOL)isFullScreenAD
+                localAdImgName:(NSString *)localAdImgName
+                      imageURL:(NSString *)imageURL
+                    canClickAD:(BOOL)canClickAD
+                       aDBlock:(LSLaunchADBlock)aDBlock
 
 {
 
@@ -81,12 +89,12 @@
     imageViewHeight = viewSize.height - LSLaunchADBottomHeight;
   }
   adImageView.frame = CGRectMake(0, 0, viewSize.width, imageViewHeight);
-    if (canClickAD) {        
-        adImageView.userInteractionEnabled = YES;
-        UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
-        [tap addTarget:ad action:@selector(tapClick)];
-        [adImageView addGestureRecognizer:tap];
-    }
+  if (canClickAD) {
+    adImageView.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] init];
+    [tap addTarget:ad action:@selector(tapClick)];
+    [adImageView addGestureRecognizer:tap];
+  }
   [ad addSubview:adImageView];
 
   if (showSkipButton) {
@@ -129,9 +137,15 @@
     return;
   }
   if (self.skipBtn && self.showCountTimeOfButton) {
-    [self.skipBtn
-        setTitle:[NSString stringWithFormat:@"跳过广告 %d", self.adTime]
-        forState:UIControlStateNormal];
+    if (self.adTime == 1) {
+      [self.skipBtn
+          setTitle:[NSString stringWithFormat:@"跳过广告  %d", self.adTime]
+          forState:UIControlStateNormal];
+    } else {
+      [self.skipBtn
+          setTitle:[NSString stringWithFormat:@"跳过广告 %d", self.adTime]
+          forState:UIControlStateNormal];
+    }
   }
   self.adTime--;
 }
@@ -155,7 +169,7 @@
 }
 - (void)tapClick {
   if (self.block) {
-      [self hide];
+    [self hide];
     self.block(YES);
   }
 }
