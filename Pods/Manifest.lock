@@ -1,0 +1,16 @@
+PODS:
+  - LSLaunchAD (0.0.2)
+
+DEPENDENCIES:
+  - LSLaunchAD (from `/Users/liusong/Desktop/github/LSLaunchAD/LSLaunchAD.podspec`)
+
+EXTERNAL SOURCES:
+  LSLaunchAD:
+    :podspec: "/Users/liusong/Desktop/github/LSLaunchAD/LSLaunchAD.podspec"
+
+SPEC CHECKSUMS:
+  LSLaunchAD: 00f57db67a959d4e48c57548621da563d909ab60
+
+PODFILE CHECKSUM: fefb87689c44a9e573c5c9461f096711fb59cc75
+
+COCOAPODS: 1.2.0.beta.1

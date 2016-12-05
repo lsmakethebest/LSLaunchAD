@@ -1,0 +1,1 @@
+../../../LSLaunchAD/LSLaunchAD/LSLaunchAD/SDWebImage/SDWebImage/SDWebImageManager.h
