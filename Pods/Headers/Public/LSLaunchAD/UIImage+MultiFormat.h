@@ -1,1 +1,0 @@
-../../../LSLaunchAD/LSLaunchAD/LSLaunchAD/SDWebImage/SDWebImage/UIImage+MultiFormat.h

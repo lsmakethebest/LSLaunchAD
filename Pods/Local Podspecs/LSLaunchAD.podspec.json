@@ -1,6 +1,6 @@
 {
   "name": "LSLaunchAD",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "summary": "一行代码实现带logo广告启动页",
   "homepage": "https://github.com/lsmakethebest/LSLaunchAD",
   "license": "MIT",
@@ -12,8 +12,13 @@
   },
   "source": {
     "git": "https://github.com/lsmakethebest/LSLaunchAD.git",
-    "tag": "0.0.2"
+    "tag": "0.0.3"
   },
   "source_files": "LSLaunchAD/**/*.{h,m}",
-  "requires_arc": true
+  "requires_arc": true,
+  "dependencies": {
+    "SDWebImage": [
+
+    ]
+  }
 }

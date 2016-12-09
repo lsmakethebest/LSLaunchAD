@@ -1,5 +1,9 @@
 PODS:
-  - LSLaunchAD (0.0.2)
+  - LSLaunchAD (0.0.3):
+    - SDWebImage
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
 
 DEPENDENCIES:
   - LSLaunchAD (from `/Users/liusong/Desktop/github/LSLaunchAD/LSLaunchAD.podspec`)
@@ -9,7 +13,8 @@ EXTERNAL SOURCES:
     :podspec: "/Users/liusong/Desktop/github/LSLaunchAD/LSLaunchAD.podspec"
 
 SPEC CHECKSUMS:
-  LSLaunchAD: 00f57db67a959d4e48c57548621da563d909ab60
+  LSLaunchAD: b34f434d4d23a8f5b47950431f7ed301d549e061
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
 
 PODFILE CHECKSUM: fefb87689c44a9e573c5c9461f096711fb59cc75
 

@@ -1,1 +1,1 @@
-../../../LSLaunchAD/LSLaunchAD/LSLaunchAD/LSLaunchAD/LSLaunchAD.h
+../../../LSLaunchAD/LSLaunchAD/LSLaunchAD.h
